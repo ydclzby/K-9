@@ -7,3 +7,5 @@ The mechanism of the legs is controlled by two servos, each controlling the shou
 The torque of the shoulder is controlled directly via the servo, whose circular attachment is slotted into the shoulder and fastened with a screw.
 The torque of the elbow is transfered via the links which are attached between the servo and the elbow.
 Finally, the feet of the chassis is a squash ball cut into half. The advantage of the squash ball is the higher friction surface and elasticity, preventing the K-9 from slipping while walking towards the user.
+
+The mechanism works consistently, however, collisions and wear could loosen the joints, hence improvemets is possible with the use of ball bearings and 
