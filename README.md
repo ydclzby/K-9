@@ -36,6 +36,112 @@ These features help to encourage more positive behaviours for the user, through 
 
 ### Chatbot
 
+The chatbot implementation leverages IBM Watson Assistant, speech recognition, and various other APIs to provide interactive functionalities. This section details the important classes and aspects involved in the chatbot implementation.
+
+#### SysState Class
+
+The `SysState` class is central to managing the state of the system and coordinating interactions between the various components and APIs.
+
+##### Initialization
+
+- **`__init__(self, history_fp)`**
+  - Initializes system state variables.
+  - Sets up the IBM Watson Assistant API.
+  - Configures the Picamera and servos for movement.
+  - Instantiates a `Quadruped` object for controlling the robot.
+
+##### Methods
+
+- **chatbot_thread()**
+  - Initializes the IBM Watson Assistant using the provided API key and service URL.
+  - Manages a session with the Assistant, sending user commands and processing responses.
+  - Adjusts the system mode based on the Assistant's responses.
+
+- **audio_thread()**
+  - Listens for audio commands using a microphone.
+  - Converts speech to text using the `speech_recognition` library.
+  - Sets the recognized text as a command for processing.
+
+- **mode_thread()**
+  - Executes actions based on the current mode, such as reading text, playing podcasts, fetching news, playing songs, and controlling the robot's movements.
+
+#### IBM Watson Assistant Integration
+
+The IBM Watson Assistant is used to interpret user commands and provide responses. 
+
+##### Methods
+
+- **chatbot_thread()**
+  - **authenticator = IAMAuthenticator(api_key)**
+    - Authenticates using the IBM Cloud API key.
+  - **assistant = AssistantV2(version='2024-05-03', authenticator=authenticator)**
+    - Initializes the Assistant with the specified version and authenticator.
+  - **assistant.set_service_url(service_url)**
+    - Sets the service URL for the Assistant.
+  - **response = assistant.create_session(assistant_id=assistant_id).get_result()**
+    - Creates a session with the Assistant.
+  - **response = assistant.message(assistant_id=assistant_id, session_id=session_id, input=message_input).get_result()**
+    - Sends user commands to the Assistant and processes the response.
+
+#### Speech Recognition Integration
+
+The `speech_recognition` library is used to capture and interpret audio commands from the user.
+
+##### Methods
+
+- **audio_thread()**
+  - **recognizer = sr.Recognizer()**
+    - Initializes the recognizer.
+  - **mic = sr.Microphone()**
+    - Sets up the microphone.
+  - **audio = recognizer.listen(source, timeout=5.0, phrase_time_limit=3.0)**
+    - Listens for audio input with a timeout and phrase time limit.
+  - **recognized_text = recognizer.recognize_google(audio)**
+    - Converts the captured audio to text using Google’s speech recognition API.
+
+#### Additional APIs and Functionalities
+
+##### News API
+
+The News API fetches the latest news articles on a given topic.
+
+- **get_news(topic)**
+  - **params = {'api-key': news_api_key, 'q': topic, 'page-size': 1, 'order-by': 'relevance'}**
+    - Sets the parameters for the news search.
+  - **response = requests.get(news_endpoint, params=params)**
+    - Sends a request to the News API to fetch articles.
+
+##### iTunes API
+
+The iTunes API is used to search for and play podcasts.
+
+- **first_podcast(topic)**
+  - **params = {'term': topic, 'media': 'podcast', 'limit': 1}**
+    - Sets the parameters for the podcast search.
+  - **response = requests.get(itunes_search_url, params=params)**
+    - Sends a request to the iTunes API to search for podcasts.
+
+##### Jamendo API
+
+The Jamendo API fetches songs based on a given topic.
+
+- **get_song(topic)**
+  - **params = {'client_id': CLIENT_ID, 'format': 'json', 'limit': 1, 'tags': topic, 'order': 'popularity_total_desc'}**
+    - Sets the parameters for the song search. This implementation fetches the most popular song under a user-specified genre (topic).
+  - **response = requests.get(api_url, params=params)**
+    - Sends a request to the Jamendo API to search for songs.
+
+#### Thread Management
+
+The chatbot employs threading to manage different tasks concurrently.
+
+- **threading.Thread(target=ibm_Chatbot.chatbot_thread).start()**
+  - Starts the chatbot thread to handle interactions with IBM Watson Assistant.
+- **threading.Thread(target=ibm_Chatbot.audio_thread).start()**
+  - Starts the audio thread to capture and process audio commands.
+- **threading.Thread(target=ibm_Chatbot.mode_thread).start()**
+  - Starts the mode thread to execute actions based on the system mode.
+
 ### Movement
 
 For the movement, the quarduped_new.py file contains 2 classes which are responsible for controlling the robot's movements. Using the adafruit_servokit library to control the servos, the approach we chose to use was to use inverse kinematics to calculate where to position each leg.
