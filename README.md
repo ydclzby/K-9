@@ -48,7 +48,7 @@ The robodog consists of the following components:
   
 ### CAD Design
 The IBM K-9 bot's body is divided into 3 parts: the chassis, the legs and the head, where each of them were designed for the sake of practicality, manoeuverability and compactness.
-Unless otherwise specified, the material used are PLA filament, which were 3D printed for the sake of rapid prototyping and bespoke modifications.
+Unless otherwise specified, the material used are PLA filament, which were 3D printed for the sake of rapid prototyping and bespoke modifications. The design was inspired by this [design](https://grabcad.com/library/quadruped-robot-w-code-1), which was shown to work consistently.
 
 <h2>Legs</h2>
 The mechanism of the legs is controlled by two servos, each controlling the shoulder (upper half of the leg) and the elbow (lower half of the leg).
