@@ -1,0 +1,45 @@
+- Parts list
+- Order
+- Software
+    - Microphone
+    - Chatbot API
+    - Movement control
+    - Face/display
+    - Collision avoidance
+- Hardware
+    - RPi
+    - Arduino
+- Chassis
+    - Modelling
+    - 3d Print/Laser cut
+
+## Milestone and its respective deadlines + content
+
+1. Create subteams & organisation/roles (2nd - 7th May)
+    1. Software
+        1. API w/ chatbot
+        2. API w/ news/music/podcast etc.
+        3. Movement (Servos/Control)
+        4. Computer vision
+    2. Hardware
+        1. Chassis
+        2. Electronics
+2. Create Parts list - TBD after meeting with supervisor (7th) - Deadline 10th May
+3. Ordering parts - Plan to order everything by the 10th (Deliver within a week ideally)
+4. Software
+    1. Chatbot API with microphone on laptop (1 wk)
+    2. Finding podcast & news API (1 wk)
+    3. Computer vision with camera (2 wks)
+5. Hardware
+    1. Completing Chassis (27th May)
+    2. Servo Config and control (27th May)
+    3. Breadboard prototype circuit for additional sensors (20th May)
+    - Possible delays from broken circuits/reprint chassis part
+6. Integration (start 28th May  - 3rd June) 
+    1. State machine/workflow of the bot (walking, playing music etc)
+    2. Uploading different software parts on pi & debug [1 week]
+    3. Movement + obstacle avoidance debugging with software/sensors [1.5 weeks]
+    - In case of chassis delay - software team should start on the pi itself and integrating mic/speaker
+7. Final Integration (start 13th June - 20th June)
+    1. Test runs and final adjustments
+    2. edge case if there is
