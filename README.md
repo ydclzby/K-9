@@ -22,7 +22,7 @@ These features help to encourage more positive behaviours for the user, through 
 
 ### Project Specification
 
-### Project Maangement and Meetings
+### Project Manangement and Meetings
 
 ### Testing processes
 
