@@ -1,4 +1,4 @@
-#Meeting
+Meeting
 - Using two-watsonx instances one for stability, one for interface
 - Send email for RPi team and everyone else to be booked to the venue
 - Introduction to Gen AI
