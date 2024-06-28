@@ -1,0 +1,3233 @@
+{
+  "name": "K9_NEW-action",
+  "type": "action",
+  "counts": {
+    "actions": 12,
+    "intents": 9,
+    "entities": 3,
+    "data_types": 0,
+    "collections": 0,
+    "global_variables": 1
+  },
+  "status": "Available",
+  "language": "en",
+  "skill_id": "14cec1d8-e49b-4356-8867-6c87b95207ca",
+  "workspace": {
+    "actions": [
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_387",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{9}: stand up"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_387"
+          }
+        ],
+        "title": "stand",
+        "action": "action_17856",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_17856_intent_30058"
+        },
+        "variables": [
+          {
+            "title": "{9}: stand up",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_387",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_11319",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_829",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{a}: push up"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_829"
+          }
+        ],
+        "title": "push up",
+        "action": "action_26038",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_26038_intent_34702"
+        },
+        "variables": [
+          {
+            "title": "{a}: push up",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_829",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_17856",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_760",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{7}: follow me"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_760"
+          }
+        ],
+        "title": "follow",
+        "action": "action_35911",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_35911_intent_13462"
+        },
+        "variables": [
+          {
+            "title": "{7}: follow me",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_760",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_32552",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_598",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{8}: sit down"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_598"
+          }
+        ],
+        "title": "sit",
+        "action": "action_11319",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_11319_intent_43568"
+        },
+        "variables": [
+          {
+            "title": "{8}: sit down",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_598",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_35911",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_001",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: hello, I am the K 9 plus dog"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_001"
+          }
+        ],
+        "title": "Greet customer",
+        "action": "welcome",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "expression": "welcome"
+        },
+        "variables": [
+          {
+            "title": "{1}: hello, I am the K 9 plus dog",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_001",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "action_26038",
+        "disambiguation_opt_out": true
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_768",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: I'm here, what can i do for you?"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: how can i help you"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "random"
+                }
+              ]
+            },
+            "handlers": [],
+            "question": {
+              "free_text": true
+            },
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_768",
+            "next_step": "step_630"
+          },
+          {
+            "step": "step_630",
+            "output": {
+              "generic": []
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "invoke_another_action_and_end",
+              "invoke_action": {
+                "action": "action_42029",
+                "policy": "default",
+                "parameters": null,
+                "result_variable": "step_630_result_1"
+              }
+            },
+            "variable": "step_630",
+            "condition": {
+              "and": [
+                {
+                  "contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "podcast",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "news",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "music",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_754"
+          },
+          {
+            "step": "step_754",
+            "output": {
+              "generic": []
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "invoke_another_action_and_end",
+              "invoke_action": {
+                "action": "action_32552-2",
+                "policy": "default",
+                "parameters": null,
+                "result_variable": "step_754_result_1"
+              }
+            },
+            "variable": "step_754",
+            "condition": {
+              "and": [
+                {
+                  "contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "news",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "music",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "podcast",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_826"
+          },
+          {
+            "step": "step_826",
+            "output": {
+              "generic": []
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "invoke_another_action_and_end",
+              "invoke_action": {
+                "action": "action_32552",
+                "policy": "default",
+                "parameters": null,
+                "result_variable": "step_826_result_1"
+              }
+            },
+            "variable": "step_826",
+            "condition": {
+              "and": [
+                {
+                  "contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "music",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "news",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_768"
+                    },
+                    {
+                      "scalar": "podcast",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_818"
+          },
+          {
+            "step": "step_818",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{7}: follow me"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_818",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_768"
+                },
+                {
+                  "scalar": "follow me",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_869"
+          },
+          {
+            "step": "step_869",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{8}: sit down"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_869",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_768"
+                },
+                {
+                  "scalar": "sit down",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_931"
+          },
+          {
+            "step": "step_931",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{9}: stand up"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_931",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_768"
+                },
+                {
+                  "scalar": "stand up",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_886"
+          },
+          {
+            "step": "step_886",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{a}: push up"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_886",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_768"
+                },
+                {
+                  "scalar": "push up",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_518"
+          },
+          {
+            "step": "step_518",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{6}: sorry, i can't understand."
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_768"
+                },
+                {
+                  "variable": "step_630"
+                }
+              ]
+            },
+            "variable": "step_518"
+          }
+        ],
+        "title": "start",
+        "action": "action_1661",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_1661_intent_41484"
+        },
+        "variables": [
+          {
+            "title": "{6}: sorry, i can't understand.",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_518",
+            "data_type": "any"
+          },
+          {
+            "title": "",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_630",
+            "data_type": "any"
+          },
+          {
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_630_result_1",
+            "data_type": "any"
+          },
+          {
+            "title": "No response",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_754",
+            "data_type": "any"
+          },
+          {
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_754_result_1",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: I'm here, what can i do for you?",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_768",
+            "data_type": "any"
+          },
+          {
+            "title": "{7}: follow me",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_818",
+            "data_type": "any"
+          },
+          {
+            "title": "",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_826",
+            "data_type": "any"
+          },
+          {
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_826_result_1",
+            "data_type": "any"
+          },
+          {
+            "title": "{8}: sit down",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_869",
+            "data_type": "any"
+          },
+          {
+            "title": "{a}: push up",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_886",
+            "data_type": "any"
+          },
+          {
+            "title": "{9}: stand up",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_931",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_32552-2",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_380",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: what genre you want to listen?"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: what style of music would you prefer?"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: What music genre do you want to play?"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "random"
+                }
+              ]
+            },
+            "handlers": [],
+            "question": {
+              "free_text": true
+            },
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_380",
+            "next_step": "step_163"
+          },
+          {
+            "step": "step_163",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{4}: "
+                          },
+                          {
+                            "variable": "step_380"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential",
+                  "repeat_on_reprompt": false
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_163",
+            "next_step": "step_293"
+          },
+          {
+            "step": "step_293",
+            "handlers": [],
+            "question": {
+              "free_text": true
+            },
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_293",
+            "next_step": "step_787"
+          },
+          {
+            "step": "step_787",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{7}: follow me"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_293"
+                }
+              ]
+            },
+            "variable": "step_787",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "follow",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_866"
+          },
+          {
+            "step": "step_866",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{8}: sit down"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "variable": "step_787"
+                }
+              ]
+            },
+            "variable": "step_866",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "sit down",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_439"
+          },
+          {
+            "step": "step_439",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: i didn't find the genre"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_439",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "not found",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_238"
+          },
+          {
+            "step": "step_238",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{5}: quit"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_238",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "quit",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_885"
+          },
+          {
+            "step": "step_885",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{5}: stop"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "variable": "step_787"
+                },
+                {
+                  "variable": "step_866"
+                },
+                {
+                  "variable": "step_439"
+                },
+                {
+                  "variable": "step_238"
+                }
+              ]
+            },
+            "variable": "step_885",
+            "condition": {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_293"
+                        },
+                        {
+                          "scalar": "stop",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_293"
+                        },
+                        {
+                          "scalar": "pause",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_902"
+          },
+          {
+            "step": "step_902",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{5}: resume"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "variable": "step_238"
+                }
+              ]
+            },
+            "variable": "step_902",
+            "condition": {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_293"
+                        },
+                        {
+                          "scalar": "resume",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_293"
+                        },
+                        {
+                          "scalar": "continue",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_553"
+          },
+          {
+            "step": "step_553",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{6}: sorry i don't understand"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "variable": "step_238"
+                },
+                {
+                  "variable": "step_902"
+                }
+              ]
+            },
+            "variable": "step_553",
+            "condition": {
+              "and": [
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_293"
+                    },
+                    {
+                      "scalar": "quit",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_matches": [
+                    {
+                      "variable": "step_293"
+                    },
+                    {
+                      "scalar": "stop",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_293"
+                    },
+                    {
+                      "scalar": "resume",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_293"
+                    },
+                    {
+                      "scalar": "continue",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_293"
+                    },
+                    {
+                      "scalar": "pause",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_293"
+                    },
+                    {
+                      "scalar": "follow me",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_293"
+                    },
+                    {
+                      "scalar": "sit down",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "title": "music",
+        "action": "action_32552",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_32552_intent_43633"
+        },
+        "variables": [
+          {
+            "title": "{4}: {variable}",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_163",
+            "data_type": "any"
+          },
+          {
+            "title": "{5}: quit",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_238",
+            "data_type": "any"
+          },
+          {
+            "title": "No response",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_293",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: what genre you want to listen?",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_380",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: i didn't find the genre",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_439",
+            "data_type": "any"
+          },
+          {
+            "title": "{6}: sorry i don't understand",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_553",
+            "data_type": "any"
+          },
+          {
+            "title": "{7}: follow me",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_787",
+            "data_type": "any"
+          },
+          {
+            "title": "{8}: sit down",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_866",
+            "data_type": "any"
+          },
+          {
+            "title": "{5}: stop",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_885",
+            "data_type": "any"
+          },
+          {
+            "title": "{5}: resume",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_902",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_42029",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_380",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: what topic of news you want to listen?"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: What type of news do you want to listen to?"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "random"
+                }
+              ]
+            },
+            "handlers": [],
+            "question": {
+              "free_text": true
+            },
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_380",
+            "next_step": "step_163"
+          },
+          {
+            "step": "step_163",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{3}: "
+                          },
+                          {
+                            "variable": "step_380"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential",
+                  "repeat_on_reprompt": false
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_163",
+            "next_step": "step_293"
+          },
+          {
+            "step": "step_293",
+            "handlers": [],
+            "question": {
+              "free_text": true
+            },
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_293",
+            "next_step": "step_692"
+          },
+          {
+            "step": "step_692",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{7}: follow me"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_293"
+                }
+              ]
+            },
+            "variable": "step_692",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "follow ",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_818"
+          },
+          {
+            "step": "step_818",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{8}: sit down"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_293"
+                }
+              ]
+            },
+            "variable": "step_818",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "sit down",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_603"
+          },
+          {
+            "step": "step_603",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: i can't. find the topic"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_603",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "not found",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_885"
+          },
+          {
+            "step": "step_885",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{6}: sorry i don't understand"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_293"
+                }
+              ]
+            },
+            "variable": "step_885",
+            "condition": {
+              "not_contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "quit",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_238"
+          },
+          {
+            "step": "step_238",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{5}: quit"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_238",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_293"
+                },
+                {
+                  "scalar": "quit",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "title": "news",
+        "action": "action_32552-2",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_32552_intent_43633-2"
+        },
+        "variables": [
+          {
+            "title": "{3}: {variable}",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_163",
+            "data_type": "any"
+          },
+          {
+            "title": "{5}: quit",
+            "variable": "step_238",
+            "data_type": "any"
+          },
+          {
+            "title": "No response",
+            "variable": "step_293",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: what topic of news you want to listen?",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_380",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: i can't. find the topic",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_603",
+            "data_type": "any"
+          },
+          {
+            "title": "{7}: follow me",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_692",
+            "data_type": "any"
+          },
+          {
+            "title": "{8}: sit down",
+            "privacy": {
+              "enabled": true
+            },
+            "variable": "step_818",
+            "data_type": "any"
+          },
+          {
+            "title": "{6}: sorry i don't understand",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_885",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "fallback",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_899",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: do you want to continue from the last time?"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "question": {
+              "free_text": true
+            },
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_899",
+            "next_step": "step_427"
+          },
+          {
+            "step": "step_427",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: Sorry"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_899"
+                }
+              ]
+            },
+            "variable": "step_427",
+            "condition": {
+              "and": [
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_899"
+                    },
+                    {
+                      "scalar": "yes",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_899"
+                    },
+                    {
+                      "scalar": "no",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_782"
+          },
+          {
+            "step": "step_782",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: what topic of the podcast you want to listen"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "question": {
+              "free_text": true
+            },
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_782",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_899"
+                },
+                {
+                  "scalar": "no",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_389"
+          },
+          {
+            "step": "step_389",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{2}: "
+                          },
+                          {
+                            "variable": "step_782"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_389",
+            "condition": {
+              "and": [
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_899"
+                        },
+                        {
+                          "scalar": "no",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "exists": {
+                        "variable": "step_782"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_588"
+          },
+          {
+            "step": "step_588",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{2}: continue_podcast"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_588",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_899"
+                },
+                {
+                  "scalar": "yes",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_683"
+          },
+          {
+            "step": "step_683",
+            "handlers": [],
+            "question": {
+              "free_text": true
+            },
+            "resolver": {
+              "type": "continue"
+            },
+            "variable": "step_683",
+            "next_step": "step_388"
+          },
+          {
+            "step": "step_388",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{7}: follow me"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_683"
+                }
+              ]
+            },
+            "variable": "step_388",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_683"
+                },
+                {
+                  "scalar": "follow ",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_564"
+          },
+          {
+            "step": "step_564",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{8}: sit down"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_683"
+                }
+              ]
+            },
+            "variable": "step_564",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_683"
+                },
+                {
+                  "scalar": "sit down",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_310"
+          },
+          {
+            "step": "step_310",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: i can't find the topic"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_310",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_683"
+                },
+                {
+                  "scalar": "not found",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_990"
+          },
+          {
+            "step": "step_990",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{5}: quit"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_990",
+            "condition": {
+              "contains": [
+                {
+                  "variable": "step_683"
+                },
+                {
+                  "scalar": "quit",
+                  "options": {
+                    "ignore_case": true
+                  }
+                }
+              ]
+            },
+            "next_step": "step_320"
+          },
+          {
+            "step": "step_320",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{5}: stop"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_683"
+                },
+                {
+                  "variable": "step_388"
+                },
+                {
+                  "variable": "step_564"
+                },
+                {
+                  "variable": "step_310"
+                },
+                {
+                  "variable": "step_990"
+                }
+              ]
+            },
+            "variable": "step_320",
+            "condition": {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_683"
+                        },
+                        {
+                          "scalar": "stop",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_683"
+                        },
+                        {
+                          "scalar": "pause",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_244"
+          },
+          {
+            "step": "step_244",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{5}: resume"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_683"
+                },
+                {
+                  "variable": "step_990"
+                }
+              ]
+            },
+            "variable": "step_244",
+            "condition": {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_683"
+                        },
+                        {
+                          "scalar": "resume",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "contains": [
+                        {
+                          "variable": "step_683"
+                        },
+                        {
+                          "scalar": "continue",
+                          "options": {
+                            "ignore_case": true
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "next_step": "step_884"
+          },
+          {
+            "step": "step_884",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{6}: sorry can you repeat again"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "replay",
+              "clear": [
+                {
+                  "variable": "step_683"
+                },
+                {
+                  "variable": "step_990"
+                },
+                {
+                  "variable": "step_244"
+                }
+              ]
+            },
+            "variable": "step_884",
+            "condition": {
+              "and": [
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_683"
+                    },
+                    {
+                      "scalar": "stop",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_683"
+                    },
+                    {
+                      "scalar": "quit",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_683"
+                    },
+                    {
+                      "scalar": "resume",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_683"
+                    },
+                    {
+                      "scalar": "continue",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_683"
+                    },
+                    {
+                      "scalar": "not found",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_683"
+                    },
+                    {
+                      "scalar": "pause",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_683"
+                    },
+                    {
+                      "scalar": "follow",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "not_contains": [
+                    {
+                      "variable": "step_683"
+                    },
+                    {
+                      "scalar": "sit down",
+                      "options": {
+                        "ignore_case": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "title": "podcast",
+        "action": "action_42029",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "action_42029_intent_11633"
+        },
+        "variables": [
+          {
+            "title": "{5}: resume",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_244",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: i can't find the topic",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_310",
+            "data_type": "any"
+          },
+          {
+            "title": "{5}: stop",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_320",
+            "data_type": "any"
+          },
+          {
+            "title": "{7}: follow me",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_388",
+            "data_type": "any"
+          },
+          {
+            "title": "{2}: {variable}",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_389",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: Sorry",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_427",
+            "data_type": "any"
+          },
+          {
+            "title": "{8}: sit down",
+            "privacy": {
+              "enabled": true
+            },
+            "variable": "step_564",
+            "data_type": "any"
+          },
+          {
+            "title": "{2}: continue_podcast",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_588",
+            "data_type": "any"
+          },
+          {
+            "title": "No response",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_683",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: what topic of the podcast you want to listen",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_782",
+            "data_type": "any"
+          },
+          {
+            "title": "{6}: sorry can you repeat again",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_884",
+            "data_type": "any"
+          },
+          {
+            "title": "{1}: do you want to continue from the last time?",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_899",
+            "data_type": "any"
+          },
+          {
+            "title": "{5}: quit",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_990",
+            "data_type": "any"
+          }
+        ],
+        "launch_mode": "learning",
+        "next_action": "action_1661",
+        "topic_switch": {
+          "allowed_from": true,
+          "allowed_into": true,
+          "never_return": false
+        },
+        "disambiguation_opt_out": false
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_001",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{1}: I'm afraid I don't understand. Please repeat your question."
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_001",
+            "condition": {
+              "lte": [
+                {
+                  "system_variable": "no_action_matches_count"
+                },
+                {
+                  "scalar": 3
+                }
+              ]
+            },
+            "next_step": "step_002"
+          },
+          {
+            "step": "step_002",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{0}: sorry i could not understand"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_002",
+            "condition": {
+              "gt": [
+                {
+                  "system_variable": "no_action_matches_count"
+                },
+                {
+                  "scalar": 3
+                }
+              ]
+            }
+          }
+        ],
+        "title": "No matches",
+        "action": "anything_else",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "expression": "anything_else"
+        },
+        "variables": [
+          {
+            "title": "{1}: I'm afraid I don't understand. Please repeat your question.",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_001",
+            "data_type": "any"
+          },
+          {
+            "title": "{0}: sorry i could not understand",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_002",
+            "data_type": "any"
+          }
+        ],
+        "disambiguation_opt_out": true
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "step_292",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "{0}: entering fallback"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [],
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "step_292"
+          }
+        ],
+        "title": "Fallback",
+        "action": "fallback",
+        "boosts": [],
+        "handlers": [],
+        "condition": {
+          "intent": "fallback_connect_to_agent"
+        },
+        "variables": [
+          {
+            "title": "{0}: entering fallback",
+            "privacy": {
+              "enabled": false
+            },
+            "variable": "step_292",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "run_always",
+        "disambiguation_opt_out": true
+      },
+      {
+        "type": "standard",
+        "steps": [
+          {
+            "step": "danger_word_detected",
+            "title": "Connect to agent",
+            "handlers": [],
+            "resolver": {
+              "type": "fallback"
+            },
+            "variable": "danger_word_detected_variable",
+            "condition": {
+              "entity": "danger_words"
+            },
+            "next_step": "profanity_detected"
+          },
+          {
+            "step": "profanity_detected",
+            "title": "Show warning",
+            "output": {
+              "generic": [
+                {
+                  "values": [
+                    {
+                      "text_expression": {
+                        "concat": [
+                          {
+                            "scalar": "Please use appropriate language when interacting with the assistant."
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "response_type": "text",
+                  "selection_policy": "sequential"
+                }
+              ]
+            },
+            "handlers": [
+              {
+                "type": "max_hits",
+                "handler": "max_hits_handler",
+                "resolver": {
+                  "type": "fallback"
+                }
+              }
+            ],
+            "max_hits": 2,
+            "resolver": {
+              "type": "end_action"
+            },
+            "variable": "profanity_detected_variable",
+            "condition": {
+              "entity": "profane_words"
+            }
+          }
+        ],
+        "title": "Trigger word detected",
+        "action": "run_always",
+        "boosts": [],
+        "handlers": [],
+        "variables": [
+          {
+            "title": "Profanity detected",
+            "variable": "danger_word_detected_variable",
+            "data_type": "any"
+          },
+          {
+            "title": "Profane word detected",
+            "variable": "profanity_detected_variable",
+            "data_type": "any"
+          }
+        ],
+        "next_action": "anything_else"
+      }
+    ],
+    "intents": [
+      {
+        "intent": "action_1661_intent_41484",
+        "examples": [
+          {
+            "text": "name"
+          },
+          {
+            "text": "dog"
+          }
+        ]
+      },
+      {
+        "intent": "fallback_connect_to_agent",
+        "examples": [
+          {
+            "text": "Can I connect to an agent?"
+          },
+          {
+            "text": "Call agent"
+          },
+          {
+            "text": "I would like to speak to someone"
+          },
+          {
+            "text": "I would like to speak to a human"
+          },
+          {
+            "text": "Agent help"
+          }
+        ],
+        "description": "Please transfer me to an agent"
+      },
+      {
+        "intent": "action_17856_intent_30058",
+        "examples": [
+          {
+            "text": "stand up"
+          },
+          {
+            "text": "up"
+          }
+        ]
+      },
+      {
+        "intent": "action_42029_intent_11633",
+        "examples": [
+          {
+            "text": "podcast"
+          }
+        ]
+      },
+      {
+        "intent": "action_32552_intent_43633",
+        "examples": [
+          {
+            "text": "music"
+          }
+        ]
+      },
+      {
+        "intent": "action_26038_intent_34702",
+        "examples": [
+          {
+            "text": "push up"
+          }
+        ]
+      },
+      {
+        "intent": "action_11319_intent_43568",
+        "examples": [
+          {
+            "text": "sit"
+          }
+        ]
+      },
+      {
+        "intent": "action_35911_intent_13462",
+        "examples": [
+          {
+            "text": "follow"
+          }
+        ]
+      },
+      {
+        "intent": "action_32552_intent_43633-2",
+        "examples": [
+          {
+            "text": "news"
+          }
+        ]
+      }
+    ],
+    "entities": [
+      {
+        "entity": "sys-yes-no",
+        "values": []
+      },
+      {
+        "entity": "danger_words",
+        "values": [],
+        "fuzzy_match": false
+      },
+      {
+        "entity": "profane_words",
+        "values": [],
+        "fuzzy_match": false
+      }
+    ],
+    "metadata": {
+      "skill": {
+        "counts": {
+          "actions": 12,
+          "intents": 9,
+          "entities": 3,
+          "data_types": 0,
+          "collections": 0,
+          "global_variables": 1
+        }
+      },
+      "api_version": {
+        "major_version": "v2",
+        "minor_version": "2018-11-08"
+      }
+    },
+    "variables": [
+      {
+        "title": "response",
+        "privacy": {
+          "enabled": true
+        },
+        "variable": "response",
+        "data_type": "string",
+        "description": ""
+      }
+    ],
+    "data_types": [],
+    "collections": [],
+    "counterexamples": [],
+    "system_settings": {
+      "variable": {
+        "format": {
+          "time": {
+            "pattern": "short"
+          },
+          "currency": {
+            "fraction_digits": 2
+          }
+        }
+      },
+      "off_topic": {
+        "enabled": true
+      },
+      "auto_learn": {
+        "apply": true
+      },
+      "topic_switch": {
+        "enabled": true,
+        "messages": {
+          "enable_confirmation": true,
+          "confirmation_failure": {
+            "generic": [
+              {
+                "values": [
+                  {
+                    "text_expression": {
+                      "concat": [
+                        {
+                          "scalar": "I'm sorry, I did not catch that, please confirm."
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "response_type": "text",
+                "selection_policy": "sequential"
+              }
+            ]
+          },
+          "confirmation_request": {
+            "generic": [
+              {
+                "values": [
+                  {
+                    "text_expression": {
+                      "concat": [
+                        {
+                          "scalar": "Do you want to continue with the previous topic: "
+                        },
+                        {
+                          "system_variable": "digressed_from"
+                        },
+                        {
+                          "scalar": "?"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "response_type": "text",
+                "selection_policy": "sequential"
+              },
+              {
+                "options": [
+                  {
+                    "label": "Yes",
+                    "value": {
+                      "input": {
+                        "text": "Yes"
+                      }
+                    }
+                  },
+                  {
+                    "label": "No",
+                    "value": {
+                      "input": {
+                        "text": "No"
+                      }
+                    }
+                  }
+                ],
+                "response_type": "option",
+                "repeat_on_reprompt": true
+              }
+            ]
+          }
+        },
+        "max_tries": 3
+      },
+      "generative_ai": {
+        "slot_filling": {
+          "enabled": false
+        }
+      },
+      "disambiguation": {
+        "prompt": "Did you mean:",
+        "enabled": true,
+        "randomize": true,
+        "max_suggestions": 5,
+        "suggestion_text_policy": "title",
+        "none_of_the_above_prompt": "None of the above",
+        "use_connect_to_support_prompt": "Connect to support",
+        "single_answer_clarification_prompt": "Something else"
+      },
+      "search_routing": {
+        "target": "conversational_search"
+      },
+      "spelling_auto_correct": true
+    },
+    "learning_opt_out": false,
+    "language": "en"
+  },
+  "description": "created for assistant d2d3d214-1c67-4988-a572-fdaad2f35c87",
+  "dialog_settings": {
+    "source_assistant": "62222580-6d55-4e58-889f-515789eb2cd1"
+  },
+  "created": "2024-06-25T14:07:40.965Z",
+  "updated": "2024-06-25T14:07:40.965Z",
+  "snapshot": "11",
+  "assistant_id": "86b88ae6-571b-4c37-9fdc-a6e052dd0cf1",
+  "assistant_references": [
+    {
+      "name": "K9_NEW",
+      "assistant_id": "62222580-6d55-4e58-889f-515789eb2cd1",
+      "skill_reference": "actions skill"
+    }
+  ]
+}
