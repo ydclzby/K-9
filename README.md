@@ -27,9 +27,22 @@ These features help to encourage more positive behaviours for the user, through 
 ### Testing processes
 
 ## Hardware
+### Components
+The robodog consists of the following components:
 
-### Materials
-
+* 11x MG995 Servo Motor
+* 1x 6V, 5.5A Buck Voltage Converter
+* 1x 6V to 5V/8A Buck Voltage Converter
+* 1x 11.1V 3500mAh 3S1C Lithium Ion Battery
+* 1x Adafruit Mini USB Microphone
+* 1x MikroElektronika 2x20W Audio Amplifier
+* 1x Raspberry Pi 4B (8GB RAM)
+* 1x 16A Rocker Switch
+* 1x OLED 128x64 Pixels
+* 1x 300mm RPi Camera Ribbon
+* 1x Raspberry Pi Camera
+* 4x 8 Ω 1 W Speaker
+  
 ### CAD Design
 The IBM K-9 bot's body is divided into 3 parts: the chassis, the legs and the head, where each of them were designed for the sake of practicality, manoeuverability and compactness.
 Unless otherwise specified, the material used are PLA filament, which were 3D printed for the sake of rapid prototyping and bespoke modifications.
@@ -46,7 +59,10 @@ The mechanism works consistently, however, collisions and wear could loosen the 
 The head works as a housing for the audio amplifier, speaker and the camera which could not be put into the circuit within the chassis. The design was made to be as compact as possible so that the weight would not affect the walking control. Moreover, it was made with the same design approach as the legs, where it can be easily put on the servo's circular bit.
 
 <h2>Chassis</h2>
-The chassis itself was made mainly to house the circuitry, while also holding switches and the OLED display. Instead of making one large chassis, it was divided into parts so that only one small part had to be printed in case of any problems.
+The chassis itself was made mainly to house the circuitry, while also holding switches and the OLED display. Instead of making one large chassis, it was divided into parts so that only one small part had to be printed in case of any problems. The central body of the chassis was made by PETG filament whose flexibility allowed for the components to be assembled easier.
+
+### Circuitry
+The circuit powering 
 
 
 ## Software
