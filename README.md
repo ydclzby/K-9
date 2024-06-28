@@ -1,4 +1,4 @@
-# K-9-
+# K-9+
 Imperial team with IBM
 
 Group Members:
@@ -212,7 +212,7 @@ For the inverse kinematics:
 The computer vision code is in the bone_detector.py file. This code contains one class, the Follower class, and is used to detect a green bone, the colour values are set in the variables colorLower and colorHigher. The code uses the picamera2 library for the camera and cv2 for computer vision. The code will capture array from the camera and turn it into HSV colour space which creates a mask based on the desired color ranges, noise is then removed from the mask and a moments is created of the binary mask. A rectangle is then created around the desired object and will rotate the camera to center the object and turn the robot and move towards it.
 
 ## Setup
+To start up the K9, make sure that the battery is fully charged (~12.3V) and the rocker switch is set to on. Give a few minutes for the Pi to switch on, at which point the OLED at the back should show the IP when connected to the imperial network. With the K9 connected to the network, you can use your own laptop with a Linux command (Ubuntu command terminal on Windows/Mac works as well) to connect to the Pi with "sudo ssh K9@<IP>". After accepting any prompts from the terminal, you can activate the programme by running "sudo python3 chatbot_9.py", at which it can listen for commands to do whichever issues.
 
 ## Acknowledgements
-
-## References
+We'd like to thank Jon McNamara, our company liaison, for giving us the resources and guidance with our projects. We'd also like to thank our project supervisor, Professor Pal Bikash for helping us with feedback on promotinal materials such as our leaflets.
