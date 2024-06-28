@@ -42,6 +42,9 @@ The robodog consists of the following components:
 * 1x 300mm RPi Camera Ribbon
 * 1x Raspberry Pi Camera
 * 4x 8 Ω 1 W Speaker
+* 4x Squash Balls
+* PLA Filament
+* PETG Filament
   
 ### CAD Design
 The IBM K-9 bot's body is divided into 3 parts: the chassis, the legs and the head, where each of them were designed for the sake of practicality, manoeuverability and compactness.
@@ -62,7 +65,7 @@ The head works as a housing for the audio amplifier, speaker and the camera whic
 The chassis itself was made mainly to house the circuitry, while also holding switches and the OLED display. Instead of making one large chassis, it was divided into parts so that only one small part had to be printed in case of any problems. The central body of the chassis was made by PETG filament whose flexibility allowed for the components to be assembled easier.
 
 ### Circuitry
-The circuit powering 
+The circuit that controls the robodog is shown in the figure below.
 
 
 ## Software
