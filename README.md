@@ -20,11 +20,9 @@ The aim of this project was to build an AI companion robot pet for the elderly w
 
 These features help to encourage more positive behaviours for the user, through engaging physical and vocal interactions, as well as, providing companionship to help combat elderly loneliness.
 
-### Project Specification
-
 ### Project Manangement and Meetings
 
-### Testing processes
+At the start of the project, there were multiple meetings to set up the necessary steps and schedule towards completion, and to give each team member a clear responsibility to contribute towards the project, which are shown [here](). After each part was completed and functional, it was integrated with other team member's work to create a subsystem. Each subsystem was then integrated together to create the K9, for which the team met almost every day.
 
 ## Hardware
 ### Components
