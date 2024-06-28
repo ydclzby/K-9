@@ -31,6 +31,23 @@ These features help to encourage more positive behaviours for the user, through 
 ### Materials
 
 ### CAD Design
+The IBM K-9 bot's body is divided into 3 parts: the chassis, the legs and the head, where each of them were designed for the sake of practicality, manoeuverability and compactness.
+Unless otherwise specified, the material used are PLA filament, which were 3D printed for the sake of rapid prototyping and bespoke modifications.
+
+<h2>Legs</h2>
+The mechanism of the legs is controlled by two servos, each controlling the shoulder (upper half of the leg) and the elbow (lower half of the leg).
+The torque of the shoulder is controlled directly via the servo, whose circular attachment is slotted into the shoulder and fastened with a screw.
+The torque of the elbow is transfered via the links which are attached between the servo and the elbow.
+Finally, the feet of the chassis is a squash ball cut into half. The advantage of the squash ball is the higher friction surface and elasticity, preventing the K-9 from slipping while walking towards the user.
+
+The mechanism works consistently, however, collisions and wear could loosen the joints, hence improvemets is possible with the use of ball bearings and adjusting the cad so the bearings would slot into them.
+
+<h2>Head</h2>
+The head works as a housing for the audio amplifier, speaker and the camera which could not be put into the circuit within the chassis. The design was made to be as compact as possible so that the weight would not affect the walking control. Moreover, it was made with the same design approach as the legs, where it can be easily put on the servo's circular bit.
+
+<h2>Chassis</h2>
+The chassis itself was made mainly to house the circuitry, while also holding switches and the OLED display. Instead of making one large chassis, it was divided into parts so that only one small part had to be printed in case of any problems.
+
 
 ## Software
 
