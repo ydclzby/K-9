@@ -65,7 +65,9 @@ The head works as a housing for the audio amplifier, speaker and the camera whic
 The chassis itself was made mainly to house the circuitry, while also holding switches and the OLED display. Instead of making one large chassis, it was divided into parts so that only one small part had to be printed in case of any problems. The central body of the chassis was made by PETG filament whose flexibility allowed for the components to be assembled easier.
 
 ### Circuitry
-The circuit that controls the robodog is shown in the figure below.
+The circuit that controls the robodog is shown in the block diagram below.
+
+![K9 Block](https://github.com/ydclzby/K-9/assets/105930789/0293a27a-12aa-443a-b428-09d847a4ecbd)
 
 
 ## Software
