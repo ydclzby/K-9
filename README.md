@@ -22,7 +22,7 @@ These features help to encourage more positive behaviours for the user, through 
 
 ### Project Manangement and Meetings
 
-At the start of the project, there were multiple meetings to set up the necessary steps and schedule towards completion, and to give each team member a clear responsibility to contribute towards the project, which are shown [here](). After each part was completed and functional, it was integrated with other team member's work to create a subsystem. Each subsystem was then integrated together to create the K9, for which the team met almost every day.
+At the start of the project, there were multiple meetings to set up the necessary steps and schedule towards completion, and to give each team member a clear responsibility to contribute towards the project, which are shown [here](https://github.com/ydclzby/K-9/tree/main/Meeting%20Notes). After each part was completed and functional, it was integrated with other team member's work to create a subsystem. Each subsystem was then integrated together to create the K9, for which the team met almost every day.
 
 ## Hardware
 ### Components
