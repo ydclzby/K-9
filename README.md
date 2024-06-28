@@ -69,6 +69,8 @@ The circuit that controls the robodog is shown in the block diagram below. Altho
 
 ![K9 Block](https://github.com/ydclzby/K-9/assets/105930789/0293a27a-12aa-443a-b428-09d847a4ecbd)
 
+The servos were controlled by the Servo HAT to optimise space and ease of use. The raspberry cam was connected via the camera cable to the raspberry pi, and the microphone and amplifier were connected through USB and audio cable, respectively. Finally, the OLED was used to display the IP for secure shell connection.
+
 
 ## Software
 
